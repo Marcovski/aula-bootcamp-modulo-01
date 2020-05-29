@@ -1,0 +1,30 @@
+a{
+    color: rgb(255, 0, 255);
+}
+span{
+    font-weight: bold;
+}
+.cor-1{
+    color: green;
+    
+}
+
+.cor-2{
+    color:orange;
+}
+
+.cor-3{
+    color: sienna;
+}
+
+.cor-4{
+    color: slateblue;
+}
+
+.cor-5{
+    color:#ff0080;
+}
+
+.cor-6{
+    color: purple;
+}
