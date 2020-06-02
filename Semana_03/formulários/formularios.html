@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <fomr action="registra.php" method="POST">
+
+        <select name="slEstado" id="" >
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="pr">Paraná</option>
+        </select>
+        
+        <hr>
+
+        <textarea name="comentario" cols="30" rows="10" placeholder="Insira seu comentário"></textarea>
+
+        <hr>
+
+        <label><input type="radio" name="rbSexo" value="h">Homem</label>
+        <label><input type="radio" name="rbSexo" value="m">Mulher</label>
+
+        <hr>
+
+        <label><input type="checkbox" name="ckFrutta" value="maca">Maça</label>
+        <label><input type="checkbox" name="ckFrutta" value="uva">Uva</label>
+        <label><input type="checkbox" name="ckFrutta" value="pera">Pera</label>
+
+        <hr>
+        <label for="txtNome">Nome</label>
+        <input type="text" name="txtName" id="txtNome" placeholder="Mario da Silva">
+
+        <hr>
+
+        <label for:"txtEmail">Email</label>
+        <input type="email" name="txtEmail" id="txtEmail" required>
+
+        <hr>
+
+        <label for:"txtSenha">Senha</label>
+        <input type="password" name="txtSenha" id="txtSenha" placeholder="**********" minlength="7" maxlength="20">
+        
+        <hr>
+
+        <label for:"txtDate">Data</label>
+        <input type="date" name="txtDate" id="txtDate">
+        
+        <hr>
+
+        <label for:"txtHidden">Hidden</label>
+        <input type="hidden" name="txtHidden" id="txtHidden">
+
+        <hr>
+
+        <label for:"txtColor">Color</label>
+        <input type="color" name="txtColor" id="txtColor">
+        
+        <hr>
+
+        <label for:"txtNumber">Number</label>
+        <input type="number" name="txtNumber" id="txtNumber" min="1" max="38">
+
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Resetar">
+        <input type="button" value="Nada">
+        
+    </form>
+</body>
+
+</html>
