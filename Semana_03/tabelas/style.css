@@ -1,0 +1,14 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*table td{
+    border-bottom: 1px solid #ccc}*/
+
+table th{
+    background-color: #eee;
+    padding: 10px;
+}
+table tr:nth-child(2n){
+    background-color: #ffc2c2;
+}
