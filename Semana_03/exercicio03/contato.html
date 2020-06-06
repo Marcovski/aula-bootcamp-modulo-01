@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="unsemantic-grid-responsive.css">
+</head>
+
+<body class="max-width">
+    <div class=" grid-100">
+        <img src="Imagem1.png" alt="" width="130px">
+    </div>
+    <div class="menu menu01">
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="quem-somos.html"> Quem somos</a></li>
+            <li><a href="contato.html"> Contato </a></li>
+        </ul>
+    </div>
+    <div>
+
+        <h2 class="background-contato">Contato</h2>
+        <div class="grid-70 max-width background-contato">
+            <div class="grid-50">
+                <form action="registra.php" method="POST">
+                    <label for="txtNome">Nome</label><br>
+                    <input type="text" name="txtNome" id="txtNome"><br><br>
+
+                    <label for="txtSenha"> Senha</label><br>
+                    <input type="password" name="txtSenha" id="txtSenha">
+
+                    <br><br>
+                    Estado <br>
+                    <select name="slEstado" id="" placeholder="São Paulo">
+                        <optgroup label="Norte">
+                            <option value="AC">Acre</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="PA">Pará</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="TO">Tocantins</option>
+                        </optgroup>
+                        <optgroup label="Nordeste">
+                            <option value="AL">Alagoas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="SE">Sergipe</option>
+                        </optgroup>
+                        <optgroup label="Centro-Oeste">
+                            <option value="DF">Distrito Federal</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                        </optgroup>
+                        <optgroup label="Sudeste">
+                            <option value="ES">Espírito Santo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                        </optgroup>
+                        <optgroup label="Sul">
+                            <option value="PR">Paraná</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                        </optgroup>
+                    </select>
+                </form>
+            </div>
+            <div class="grid-50">
+                <form action="registra.php" method="POST">
+                    <label for="txtEmail">E-mail</label><br>
+                    <input type="email" name="txtEmail" id="txtEmail"><br><br>
+                    Sexo <br>
+                    <label><input type="radio" name="rbSexo" value="h">Homem</label>
+                    <label><input type="radio" name="rbSexo" value="m">Mulher</label><br><br>
+                    <hr class="grid-100">
+            </div>
+
+            <div class="grid-100">
+                <br>
+                Fala um pouco sobre você <br>
+                <textarea name="comentario" cols="100%" rows="10" placeholder="Insira seu comentário"></textarea>
+                <input type="submit" value="cadastrar">
+            </div>
+        </div>
+
+        <div class="grid-30 conteudo-2 max-width">
+            <h2>Dicas</h2>
+            <p class="grid-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugiat quis delectus, illum maiores et
+                doloremque reiciendis laboriosam commodi consequuntur quae, quisquam placeat, temporibus ab? Ratione cum
+                unde facere distinctio? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto natus, inventore
+                veritatis sapiente vitae, eius dolores possimus itaque reprehenderit rem mollitia architecto, molestiae
+                expedita rerum! Beatae cupiditate at consequatur tenetur. Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Voluptatum commodi delectus quia culpa provident eius sed facilis harum laudantium
+                quidem, doloremque quod. Amet eius ullam ipsam culpa consectetur dolorem nostrum.</p>
+        </div>
+
+        <div class="max-width grid-100 tdr">
+            <p><strong>Todos os direitos reservados.</strong></p>
+        </div>
+
+
+</body>
+
+</html>
