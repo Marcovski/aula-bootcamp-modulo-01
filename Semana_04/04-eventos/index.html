@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        textarea {
+            padding: 10px;
+            max-width: 500px;
+            width: 100%;
+            border: 3px solid hsl(290, 73%, 68%);
+            outline: none;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- dica exercicio!!!!!!!!! -->
+    <form action="" onsubmit="return enviaForm();">
+
+        <input type="submit">
+
+    </form>
+
+    <textarea id="txtMensagem" rows="5" onkeyup="contaCoractere();"></textarea>
+    <p><span id="caracteres">150 </span>caracteres restantes.</p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
