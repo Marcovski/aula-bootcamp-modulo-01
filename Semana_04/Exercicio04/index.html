@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="unsemantic-grid-responsive.css">
+</head>
+
+<body>
+    <div class="max-witdh ">
+        <header>
+            <div class="grid-100 menu ">
+                <a href="#" class="grid-10 mobile-grid-100 "><img
+                        src="https://www.kadunew.com/blog/wp-content/uploads/2012/03/css3-logo-html5.jpg" alt=""
+                        alt="Minha logo" class="logo"></a>
+                <ul class="grid-90  ">
+                    <li class="mobile-grid-100"><a href="#"> Home</a></li>
+                    <li class="mobile-grid-100"><a href="#"> Quem somos</a></li>
+                    <li class="mobile-grid-100"><a href="index.html"> Cadastro </a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="backg">
+                <h2>| Cadastro</h2>
+                <form method="post" class="form" id="formCadastro">
+                    <div class="grid-50">
+                        <label for="txtNome">Nome</label>
+                        <input type="text" name="txtNome" id="txtNome" placeholder="Juninho da Silva">
+                        <label for="txtSenha">Senha</label>
+                        <input type="password" name="txtSenha" id="txtSenha" placeholder="********">
+                        <p class="parag">Gênero</p>
+                        <select name="slGenero" id="slGenero">
+                            <option value="m">Masculino</option>
+                            <option value="f">Feminino</option>
+                        </select>
+                    </div>
+                    <div class="grid-50">
+                        <label for="txtEmail">Email</label>
+                        <input type="email" name="txtEmail" id="txtEmail" placeholder="Juninho123@gmail.com">
+                        <label for="txtConfSenha">Confirmar senha</label>
+                        <input type="password" name="txtConfSenha" id="txtConfSenha" placeholder="********">
+                        <label for="txtDataNasc">Data de nascimento</label>
+                        <input type="date" name="txtDataNasc" id="txtDataNasc" placeholder="dd/mm/aaaa">
+                    </div>
+                    <div class="grid-100 ">
+                        <p>Conte sobre você</p>
+                        <textarea name="txtSobre" class="grid-100 mobile-grid-100" id="txtSobre" rows="7"></textarea>
+                    </div>
+                    <div class="grid-100">
+                        <div class="grid-70 ulli" id="mErro">
+                            
+                        </div>
+                        <div class="grid-30">
+                            <input type="submit" value="Cadastrar" class="botao" id="botao">
+                        </div>
+                    </div>
+                </form>
+            </div>
+    </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
