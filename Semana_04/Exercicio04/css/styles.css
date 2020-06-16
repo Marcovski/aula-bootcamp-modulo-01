@@ -87,14 +87,15 @@ header {
 
 .invalido {
     border-color: #e72323;
-   
- 
+
+
 }
 
 .valido {
- border-color: rgb(37, 252, 187);
-    
+    border-color: rgb(37, 252, 187);
+
 }
+
 .ulli ul li {
     background-color: #ff5555;
     margin-top: 10px;

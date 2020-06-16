@@ -21,61 +21,86 @@ function pegarValor() {
     };
     return obj;
 }
+
 function validando(pegavalor) {
     var erros = [];
+
     //NOME
     if (pegavalor.nome.length < 3 || pegavalor.nome.length > 50) {
+        erros.push('Informe um nome válido. Mínimo de 3 caracteres e máximo de 50 caracteres.')
         document.getElementById('txtNome').classList.add('invalido');
-        erros.push(erroNome());
     } else {
+        document.getElementById('txtNome').classList.remove('invalido');
+    } if (pegavalor.nome.length >= 3 && pegavalor.nome.length < 50) {
         document.getElementById('txtNome').classList.add('valido');
+    } else {
+        document.getElementById('txtNome').classList.remove('valido')
     }
-    //SENHA 
-    if (pegavalor.senha.length < 3 || pegavalor.senha.length > 50) {
+
+    /*VALIDAÇAO DA SENHA*/
+    if (pegavalor.senha.length < 7 || pegavalor.senha.length > 100) {
+        erros.push('Informe uma senha válida. Mínimo de 7 e máximo de 100 caracteres.')
         document.getElementById('txtSenha').classList.add('invalido');
-        erros.push(erroSenha());
     } else {
+        document.getElementById('txtSenha').classList.remove('invalido');
+    }
+    if (pegavalor.senha.length >= 7 && pegavalor.senha.length < 100) {
         document.getElementById('txtSenha').classList.add('valido');
-    }
-    //CONFIRMAR SENHA
-    if (pegavalor.confirmsenha.length < 3 || pegavalor.confirmsenha.length > 50) {
-        document.getElementById('txtConfSenha').classList.add('invalido');
-        erros.push(erroconfSenha());
     } else {
-        document.getElementById('txtConfSenha').classList.add('valido');
+        document.getElementById('txtSenha').classList.remove('valido');
     }
+
+    /*CONFIRMAÇÃO DE SENHA */
+    if (pegavalor.confirmarsenha < 1 || pegavalor.confirmarsenha != pegavalor.senha) {
+        erros.push('Senhas informadas diferentes.')
+        document.getElementById('txtConfSenha').classList.add('invalido');
+    } else
+        document.getElementById('txtConfSenha').classList.remove('invalido')
+
+    if (pegavalor.confirmarsenha == pegavalor.senha && pegavalor.confirmarsenha > 1) {
+        document.getElementById('txtConfSenha').classList.add('valido');
+    } else {
+        document.getElementById('txtConfSenha').classList.remove('valido');
+    }
+
     //EMAIL
     if (pegavalor.email.length < 3 || pegavalor.email.length > 50 || !/.+?\@.+?\..+/.test(pegavalor.email)) {
         document.getElementById('txtEmail').classList.add('invalido');
         erros.push(erroEmail());
     } else {
+        document.getElementById('txtEmail').classList.remove('invalido');
+    } if (pegavalor.email.length < 3 || pegavalor.email.length > 50 || !/.+?\@.+?\..+/.test(pegavalor.email)) {
         document.getElementById('txtEmail').classList.add('valido');
-    }
-    //GÊNERO
-    if (pegavalor.genero == 'm' || pegavalor.genero.value == 'f') {
-        document.getElementById('slGenero').classList.add('valido');
-
-    }
-    //DATA
-
-    //Erros
-
-    if (erros.length > 0) {
-
-
-        let li = document.getElementById('mErro');
-        li.innerHTML = '';
-
-        for (var i = 0; i < erros.length; i++) {
-        
-            li.innerHTML = erros[i];
-        }
-
-    }else{
-        return true
+    } else {
+        document.getElementById('txtEmail').classList.remove('valido');
     }
 
 }
+//GÊNERO
+if (pegavalor.genero == 'm' || pegavalor.genero == 'f') {
+    document.getElementById('slGenero').classList.add('valido');
+
+}
+//DATA
+
+//Erros
+
+if (erros.length > 0) {
+
+
+    let li = document.getElementById('mErro');
+    li.innerHTML = '';
+
+    for (var i = 0; i < erros.length; i++) {
+
+        li.innerHTML = erros[i];
+    }
+
+} else {
+    
+}
+
+
 
 
 var mErro = document.getElementById('mErro');
